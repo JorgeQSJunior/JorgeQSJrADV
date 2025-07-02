@@ -2,39 +2,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Súmulas e Jurisprudência | Jorge Quintino</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Súmulas e Jurisprudência</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body { font-family: Arial, sans-serif; background-color: #FF9F1C; color: #333; margin: 0; }
-    header, footer { background-color: #000; color: #fff; text-align: center; padding: 20px; }
-    nav { background-color: #000; padding: 10px; display: flex; justify-content: center; gap: 15px; }
-    nav a { color: #fff; text-decoration: none; }
-    section { max-width: 800px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px; }
-    .item { margin-bottom: 20px; }
-    .item h2 { margin-bottom: 5px; }
-    .item p { color: #666; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .sumula-item {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .sumula-item h2 {
+      margin-top: 0;
+      color: #004080;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Súmulas e Jurisprudência</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="sumulas.html">Súmulas</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="blog.html">Blog</a>
-    <a href="sumulas.html">Súmulas e Jurisprudência</a>
-  </nav>
-  <section>
-    <div class="item">
-      <h2><a href="sumulas/sumula1.html">Súmula Exemplo 1</a></h2>
-      <p>Breve descrição ou ementa da Súmula Exemplo 1.</p>
+
+  <main class="container">
+    <!-- Exemplo de Súmula -->
+    <div class="sumula-item" id="sumula-1">
+      <h2>Súmula Exemplo 1</h2>
+      <p>Texto completo da Súmula Exemplo 1. Esta súmula trata sobre questões relevantes no âmbito do direito administrativo...</p>
     </div>
-    <!-- Adicione novos itens aqui -->
-  </section>
+
+    <div class="sumula-item" id="sumula-2">
+      <h2>Súmula Exemplo 2</h2>
+      <p>Texto completo da Súmula Exemplo 2. Esta aborda aspectos do direito previdenciário com implicações práticas para o INSS...</p>
+    </div>
+
+    <!-- Para adicionar nova súmula, copie e edite o bloco abaixo -->
+    <!--
+    <div class="sumula-item" id="sumula-3">
+      <h2>Súmula Exemplo 3</h2>
+      <p>Texto completo da Súmula Exemplo 3...</p>
+    </div>
+    -->
+  </main>
+
   <footer>
-    <p>&copy; 2025 Jorge Quintino da Silva Junior - Todos os direitos reservados</p>
+    <p>&copy; 2025 Jorge Quintino da Silva Junior - OAB/SP 340.331</p>
   </footer>
 </body>
 </html>
