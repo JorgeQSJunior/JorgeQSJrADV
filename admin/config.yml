@@ -20,7 +20,7 @@ collections:
       - { label: "Corpo", name: "body", widget: "markdown" }
 
   - name: "sumulas"
-    label: "Súmulas e Jurisprudência"
+    label: "Sumulas e Jurisprudência"
     folder: "sumulas"
     create: true
     slug: "{{slug}}"
