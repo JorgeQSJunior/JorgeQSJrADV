@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: demopublickey
+
+site_url: https://www.jorgequintino.adv.br
+logo_url: /favicon.ico
+
+collections:
+  - name: "posts"
+    label: "Publicações do Blog"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Corpo", name: "body", widget: "markdown" }
+
+  - name: "sumulas"
+    label: "Súmulas e Jurisprudência"
+    folder: "sumulas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Número da Súmula", name: "numero", widget: "string" }
+      - { label: "Órgão", name: "orgao", widget: "string" }
+      - { label: "Data", name: "data", widget: "datetime", default: "" }
+      - { label: "Texto", name: "texto", widget: "markdown" }
